@@ -1,0 +1,19 @@
+<h1>Stories</h1>
+<div class="row">
+    {{#each stories}}
+        <div class="col s12 m6">
+            <div class="card ">
+                <div class="card-content white-text">
+                    <span class="card-title">{{title}}</span>
+                    <p>{{body}}</p>
+                </div>
+                <div class="card-action">
+                    <a href="/stories/{{_id}}">Read More</a>
+                </div>
+            </div>
+        </div>
+    {{/each}}
+    {{else}}
+        <p> No stories to show</p>
+    {{/each}}
+</div>
